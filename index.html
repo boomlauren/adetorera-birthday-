@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Adetorera</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #1a1a1a;
+      color: #ffb6c1;
+      font-family: 'Pacifico', cursive;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    h1 {
+      font-size: 3em;
+      margin-top: 1em;
+      animation: fadeIn 3s ease-in-out;
+    }
+    p {
+      font-size: 1.5em;
+      margin: 1em 10%;
+      animation: fadeIn 4s ease-in-out;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 2em auto;
+      gap: 10px;
+      animation: fadeIn 5s ease-in-out;
+    }
+    .gallery img {
+      width: 200px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #ffb6c1;
+      transition: transform 0.3s ease-in-out;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .balloons {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      animation: rise 10s infinite;
+    }
+    .balloon {
+      width: 50px;
+      height: 70px;
+      background: pink;
+      border-radius: 50%;
+      box-shadow: 0 0 10px pink;
+    }
+    @keyframes rise {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-150vh); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="assets/song.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <h1>Happy Birthday Adetorera</h1>
+  <p>I'm a broke tech guy right now, but I wanted to give you something special.</p>
+  <p>This is what I can build — just for you.</p>
+  <p>
+    Roses are red, violets are blue,<br />
+    This little website is all for you.<br />
+    With every click, my heart it shows,<br />
+    In code and dreams, my feelings grow.
+  </p>
+  <p>
+    I may not have the cash today,<br />
+    But love and code came out to play.<br />
+    So here's a site, sweet and true,<br />
+    To wish a Happy Birthday to you.
+  </p>
+
+  <div class="gallery">
+    <img src="assets/photo1.jpg" alt="Adetorera 1" />
+    <img src="assets/photo2.jpg" alt="Adetorera 2" />
+    <img src="assets/photo3.jpg" alt="Adetorera 3" />
+    <img src="assets/photo4.jpg" alt="Adetorera 4" />
+  </div>
+
+  <div class="balloons">
+    <div class="balloon"></div>
+    <div class="balloon" style="background: #ff69b4;"></div>
+    <div class="balloon" style="background: #ff1493;"></div>
+  </div>
+</body>
+</html>
